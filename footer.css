@@ -1,0 +1,118 @@
+#about {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 800px;
+  padding-top: 60px;
+  align-items: center;
+  background-color: rgb(251, 245, 221);
+}
+
+#about h3{
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 600;
+    font-size: x-large;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    color: #262529;
+  
+}
+#about h3:hover{
+    box-shadow: 5px 7px 5px 1px #81805e;
+  cursor: pointer;
+  transition: 0.5s ease-in;
+  -webkit-transition: 0.5s ease-in;
+  -moz-transition: 0.5s ease-in;
+  -ms-transition: 0.5s ease-in;
+  -o-transition: 0.5s ease-in;
+  transition-timing-function: 0.5s ease-in;
+}
+.aboutHim{
+    font-family: "Pacifico", cursive;
+    font-weight: 200;
+    margin-top: 8px;
+    max-width: 400px;
+    margin-bottom: 15px;
+    color: #6d5508;
+
+}
+.bioRaw{
+    display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  justify-content: center;
+}
+.bioColum{
+    flex: 50%;
+    max-width: 50%;
+    padding: 10px 4px;
+
+}
+.bioCont{
+width:75%;
+display: flex;
+flex-direction: column;
+align-items:end;
+}
+.bio{
+    font-size: large;
+    font-weight: 400;
+    font-family: "Pacifico", cursive;
+    color: #262529;
+    line-height: 35px;
+    box-shadow: 5px 7px 5px 1px #81805e;
+    text-decoration-line:underline;
+    -moz-text-decoration-line:underline;
+}
+
+
+.site‑footer {
+    background: #16404D;
+    padding: 30px 20px;
+    text-align:center;
+    font-size: 17px; 
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .site‑footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px;
+  }
+  
+  .site‑footer li {
+    display: inline-block;
+    margin: 0 12px;
+  }
+  
+  .site‑footer a {
+    color: #DDA853;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  
+  .site‑footer i {
+    margin-right: 6px;      
+    color: #b99e24;        
+  }
+  
+  .site‑footer a:hover,
+  .site‑footer i:hover {
+    color: #645512;         
+  }
+  .credits{
+    color:rgb(199, 190, 147) ;
+    font-size:13px;
+
+    padding-top: 28px;
+  }
+
+
+
+
+  @media screen and (max-width: 600px) {
+    .bioColum {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }

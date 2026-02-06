@@ -1,0 +1,105 @@
+#messages {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 800px;
+  padding-top: 60px;
+  align-items: center;
+  background-color: rgb(251, 245, 221);
+}
+
+#messages .msLogo {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  font-size: x-large;
+  margin-top: 5px;
+  color: #262529;
+}
+
+.msLogo:hover {
+  box-shadow: 5px 7px 5px 1px #81805e;
+  cursor: pointer;
+  transition: 0.5s ease-in;
+  -webkit-transition: 0.5s ease-in;
+  -moz-transition: 0.5s ease-in;
+  -ms-transition: 0.5s ease-in;
+  -o-transition: 0.5s ease-in;
+  transition-timing-function: 0.5s ease-in;
+}
+#messages .ms-intro {
+  font-family: "Pacifico", cursive;
+  font-weight: 200;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  color: #6d5508;
+}
+
+.msgColumn {
+  flex: 25%;
+  max-width: 25%;
+  padding: 10px 4px;
+  background-color: rgb(251, 245, 221);
+}
+
+.ms-container {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  background-color: rgb(251, 245, 221);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.ms-container:hover {
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  background-color: rgb(22, 64, 77);
+  transition: 0.5s ease-out;
+  -webkit-transition: 0.5s ease-out;
+  -moz-transition: 0.5s ease-out;
+  -ms-transition: 0.5s ease-out;
+  -o-transition: 0.5s ease-out;
+}
+.msg {
+  font-size: 16px;
+  font-weight: 400;
+  color: #645512;
+  max-width: 350px;
+  font-family: "Pacifico", cursive;
+
+  transform: rotate(-4deg);
+  -webkit-transform: rotate(-4deg);
+  -moz-transform: rotate(-4deg);
+  -ms-transform: rotate(-4deg);
+  -o-transform: rotate(-4deg);
+}
+.msg:hover {
+  font-family:'Courier New', Courier, monospace;
+  transform: none;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+}
+.ms-container:hover .msg {
+  color: rgb(251, 245, 221);
+}
+
+
+@media screen and (max-width: 800px) {
+  .msgColumn {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .msgColumn {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
